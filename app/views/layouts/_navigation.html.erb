@@ -1,6 +1,19 @@
 <nav class="navbar navbar-default">
+	<div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=128523111100173';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
   <div class="container-fluid">
 		<h1><%= link_to 'Catsta', root_path %></h1>
 		<h4>powered by <%= link_to 'The Cat Api', 'http://thecatapi.com/', target: "_blank" %></h4>
+		<div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>
+
 	</div>
-</div>
+
+
+</nav>
