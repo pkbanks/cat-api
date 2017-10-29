@@ -1,0 +1,11 @@
+<h1>Cats</h1>
+
+<div class="row">
+	<% @cats.each do |cat| %>
+		<div class="col-xs-12 col-sm-4">
+			<div class="card">
+				<%= image_tag(cat["url"], id: cat["id"], alt: "cat", class:"card-img-top") %>
+			</div>
+		</div>
+	<% end %>
+</div>
