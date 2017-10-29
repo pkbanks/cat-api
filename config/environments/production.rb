@@ -1,6 +1,14 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # for encrypted secrets, via
+  # $ bin/rails secrets:setup
+  config.read_encrypted_secrets = true
+
+  # to edit secrets run this from cl
+  # EDITOR=subl bin/rails secrets:edit
+  
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -88,4 +96,5 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
 end
