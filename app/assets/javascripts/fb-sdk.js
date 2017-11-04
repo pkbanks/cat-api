@@ -42,6 +42,7 @@ function fbConnectApi(response){
 }
 
 function removeUserName(){
+  console.log("hoho");
   document.getElementById('user-status-msg').innerHTML = ""
 }
 
