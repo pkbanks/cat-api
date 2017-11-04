@@ -26,7 +26,8 @@ function checkLoginState() {
       console.log("FB connected");
       fbConnectApi(response);
     } else{
-      console.log("FB not connected")
+      console.log("FB not connected");
+      removeUserName();
     }
   });
 }
@@ -40,7 +41,9 @@ function fbConnectApi(response){
   return 1;
 }
 
-
+function removeUserName(){
+  document.getElementById('user-status-msg').innerHTML = ""
+}
 
 
 
